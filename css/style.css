@@ -6,46 +6,111 @@
 
 body{
   background-color: #6f9eaf;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Fredoka One', cursive;
 }
 
 
 .memory-game{
   color: white;
   text-align: center;
-  font-size: 80px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin: 10px;
 }
+
+/* cards */
 
 .raw{
   text-align: center;
 }
 
 .card{
-  width: 110px;
-  height: 130px;
+  width: 160px;
+  height: 170px;
   background-image: url("../img/pattern.png");
   background-size: contain;
   border: 1px solid lightgrey;
   border-radius: 10px;
   display: inline-block;
   margin-bottom: 20px;
+  margin: 6px;
+  position: relative;
 }
 
-.card:hover{
+.special-card{
+  width: 160px;
+  height: 170px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin: 8px;
+  background-color: white;
+  vertical-align: bottom;
+}
+
+.air-boolean {
+  margin-top: 150px;
+  visibility: hidden;
+  position: relative;
+  color: #af0069;
+}
+
+.card:hover .air-boolean{
+  visibility: visible;
+}
+
+.card.baloon:hover{
   background-image: url("../img/noun_air_balloon_3134741.png");
+  background-size: contain;
   background-repeat: no-repeat;
   background-color: white;
 }
 
-#initial-card{
-  background-image: url("../img/noun_air_balloon_3134741.png");
-  background-color: white;
+.card.bycicle:hover{
+  background-image: url("../img/noun_Bicycle_3134821.png");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-color: white;
 }
+
+.card.cruise:hover{
+  background-image: url("../img/noun_Cruise_Ship_3134824.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.card.submarine:hover{
+  background-image: url("../img/noun_Submarine_3134738.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.card.tractor:hover{
+  background-image: url("../img/noun_Tractor_3134797.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.card.tram:hover{
+  background-image: url("../img/noun_Tram_3134750.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+
+
+/* /cards */
+
+
+/* footer */
 
 p{
   color: black;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
+  font-size: 14px;
 }
+
+/* /footer */
